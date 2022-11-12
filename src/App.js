@@ -15,6 +15,8 @@ function App() {
             <Route path='/video/:id'  element={<VideoDetail/>}/>  
             <Route path='/channel/:id'  element={<ChannelDetail/>}/>  
             <Route path='/search/:searchTerm'  element={<SearchFeed/>}/>  
+          {/* searchTerm se nalazi u SearchBar koji mozemo da citamo
+          unutar SearchFeed kroz useEffect */}
           </Routes>        
         </Box>
       </BrowserRouter>
